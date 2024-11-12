@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Turno</title>
+</head>
+
+<body class="body-Formulario">
+    <header>
+        <h1>Solicita tu turno</h1>
+        <p>A continuacion se requeriran una serie de datos tuyos y de tu mascota para que podamos ponernos en contacto
+        </p>
+    </header>
+    <div class="contenedor-formulario">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos del propietario</legend>
+                <label for="">Nombre*</label>
+                <input type="text" name="" id="" size="20" maxlength="30" required>
+                <label for="">Apellido*</label>
+                <input type="text" name="" id="" size="20" maxlength="30" required> <br><br>
+                <label for="DNI">DNI*</label>
+                <input type="number" name="DNI" id="" required>
+                <label for="fec_nac">Fecha de nacimiento</label>
+                <input type="date" name="fec_nac" id="" required> <br>
+                <br>
+                <label for="Telefono">Número de telefono*</label>
+                <input type="number" name="telefono" required>
+
+
+                <label for="Domicilio">Domicilio*</label>
+                <select name="Domicilio" id="">
+                    <option value="CABA">CABA</option>
+                    <option value="Gran Buenos aires">Gran Buenos aires</option>
+                    <option value="Provincia de Buenos aires">Provincia de Buenos aires</option>
+                    <option value="Interior del pais">Interior del país</option>
+                </select> <br><br>
+                <label for="correo">E-mail*</label>
+                <input type="email" name="correo" id=""> <br><br>
+                <label for="rb">Motivo de consulta</label>
+                <input type="radio" name="rb" id="" value="1">Vacuna
+                <input type="radio" name="rb" id="" value="2">Atención clínica
+                <input type="radio" name="rb" id="" value="3">Emergencia
+                <input type="radio" name="rb" id="" value="4">Eutanasia
+                <br><br>
+                <label for="comentarios">Datos adicionales</label><br><br>
+                <textarea name="comentarios" id="" cols="30" rows="10"
+                    placeholder="Escriba aqui su consulta máx de 300 caracteres"></textarea>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del paciente</legend>
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" id="" size="20" maxlength="30" required>
+                <label for="edad">Edad (aproximada)</label>
+                <input type="number" name="edad" required> <br><br>
+                <label for="especie">Especie</label>
+                <select name="especie" id="" size="1">
+                    <option value="1">Canino</option>
+                    <option value="2">Felino</option>
+                    <option value="3">No tradicional</option>
+                </select> <br><br>
+                <label for="esterilizacion">Esterilizada/o</label>
+                <select name="esterilizacion" id="" size="1">
+                    <option value="1">Si</option>
+                    <option value="2">No</option>
+                </select> <br><br>
+            </fieldset>
+            <input type="checkbox" name="condiciones" id="" required> Acepto los términos y condiciones <br><br>
+            <input type="submit" value="Enviar datos">
+            <input type="reset" value="Borrar">
+        </form>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="../Index.html">Volver al inicio</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
