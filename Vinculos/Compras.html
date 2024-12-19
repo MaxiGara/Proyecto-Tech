@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssProyecto/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7912411d42.js" crossorigin="anonymous"></script>
+    <title>Carrito</title>
+</head>
+
+<body>
+
+    <h1>Servicios Disponibles</h1>
+
+    <div id="servicios">
+        <div id="productos">
+            <div class="producto">
+                <span>Consulta - $14000</span>
+                <button onclick="agregarAlCarrito('Consulta', 14000)">Agregar</button>
+            </div>
+            <div class="producto">
+                <span>Vacunación - $20000</span>
+                <button onclick="agregarAlCarrito('Vacunación', 20000,)">Agregar</button>
+            </div>
+            <div class="producto">
+                <span>Emergencia - $18000</span>
+                <button onclick="agregarAlCarrito('Emergencia', 18000)">Agregar</button>
+            </div>
+            <div class="producto">
+                <span>Eutanasia - $30000</span>
+                <button onclick="agregarAlCarrito('Eutanasia', 30000)">Agregar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Subtotal: $<span id="subtotal-carrito">0</span></p>
+        <p>IVA (21%): $<span id="iva-carrito">0</span></p>
+        <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button onclick="mostrarCheckout()">Checkout</button>
+    </div>
+
+    <!-- Modal de Checkout -->
+    <div id="checkout-modal">
+        <div class="checkout-content">
+            <h2>Finalizar Compra</h2>
+            <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+            <p>IVA: $<span id="modal-iva">0</span></p>
+            <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+            <button onclick="realizarCompra()">Confirmar Compra</button>
+            <button onclick="cerrarCheckout()">Cancelar</button>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="../Index.html">Volver al inicio</a></li>
+            <li>Medios de pago</li>
+            <img class="pagos" src="../Imagenes/Visa.jpg" alt="Visa">
+            <img class="pagos" src="../Imagenes/Mastercard.jpg" alt="Mastercard">
+            <img class="pagos" src="../Imagenes/mercadoPago.jpg" alt="Mercado pago">
+            <li>Derechos reservados</li>
+        </ul>
+
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../jsProyecto/compras.js"></script>
+</body>
+
+</html>
